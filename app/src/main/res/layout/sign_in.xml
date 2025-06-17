@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1C5E7"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/signHeader"
+        android:layout_width="229dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="124dp"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="#607B83"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editBirthday"
+        android:layout_width="281dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:drawable/edit_text"
+        android:fontFamily="@font/inter_18pt_regular"
+        android:hint="Birthday"
+        android:inputType="text"
+        android:textColor="#6D66BC"
+        android:textColorHint="#6D66BC"
+        android:focusable="false"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signHeader"
+        app:layout_constraintVertical_bias="0.191"
+        android:onClick="setBirthday"/>
+
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="281dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="104dp"
+        android:background="@android:drawable/edit_text"
+        android:fontFamily="@font/inter_18pt_regular"
+        android:hint="First Name"
+        android:inputType="text"
+        android:textColor="#6D66BC"
+        android:textColorHint="#6D66BC"
+        app:layout_constraintBottom_toTopOf="@+id/editBirthday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signHeader"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="281dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/edit_text"
+        android:fontFamily="@font/inter_18pt_regular"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:textColor="#6D66BC"
+        android:textColorHint="#6D66BC"
+        app:layout_constraintBottom_toTopOf="@+id/editBirthday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="195dp"
+        android:layout_height="52dp"
+        android:text="Submit"
+        android:fontFamily="@font/inter_18pt_regular"
+        android:backgroundTint="#DB9265"
+        android:textColor="#F4F8FD"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBirthday"
+        app:layout_constraintVertical_bias="0.457"
+        android:onClick="onSubmit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
