@@ -127,7 +127,7 @@ public class SignInActivity extends AppCompatActivity {
                 jject.put("firstName", jPrep.get(0));
                 jject.put("lastName", jPrep.get(1));
                 jject.put("birthday", jPrep.get(2));
-                jject.put("timestamp", LocalDateTime.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy hh:mm:ss a")));
+                jject.put("tstamp", LocalDateTime.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy hh:mm:ss a")));
 
             new PostInfo().execute(jject);
             startActivity(new Intent(this,Confirm.class));
